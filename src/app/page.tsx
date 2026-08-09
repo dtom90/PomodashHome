@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { DownloadButtons } from './components/DownloadButtons'
 
@@ -149,9 +150,9 @@ export default async function Home() {
       {/* Footer */}
       <div className="px-4 md:px-[14.5vw] py-8 text-sm text-gray-600">
         <div className="flex justify-center items-center gap-4">
-          <a href="/privacy" className="hover:text-gray-800 transition-colors">
+          <Link href="/privacy" className="hover:text-gray-800 transition-colors">
             Privacy Policy
-          </a>
+          </Link>
         </div>
       </div>
     </div>

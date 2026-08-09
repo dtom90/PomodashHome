@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Pomodash Home",
   description: "Your website description",
+  icons: {
+    icon: "/clock-solid.svg",
+  },
 };
 
 export default function RootLayout({
@@ -20,9 +23,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <head>
-        <link rel="icon" href="/clock-solid.svg" />
-      </head>
       <body className="font-inter bg-white min-h-screen">
         <Header />
         <main className="min-h-screen bg-white">
